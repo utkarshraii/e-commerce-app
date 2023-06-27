@@ -95,6 +95,11 @@
     align-items: center;
     justify-content: center;
   }
+
+  .product-link{
+    text-decoration: none !important;
+    color: black !important;
+  }
 /* 
    register page
   .register{
