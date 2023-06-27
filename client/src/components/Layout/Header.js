@@ -3,6 +3,7 @@ import {NavLink,Link} from 'react-router-dom'
 import {BiSolidShoppingBag} from 'react-icons/bi'
 import { useAuth } from '../../context/auth';
 import toast, { ToastBar } from 'react-hot-toast';
+import SearchInput from '../Form/SearchInput';
 const Header = () => {
   const [auth,setAuth]=useAuth()
   const handleLogout = () => {
@@ -23,6 +24,7 @@ const Header = () => {
       <Link to="/" className="navbar-brand">< BiSolidShoppingBag/>E-Commerce App
       </Link>
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+        <SearchInput/>
         <li className="nav-item">
           <NavLink 
           to="/" 
